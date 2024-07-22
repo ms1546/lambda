@@ -28,7 +28,7 @@ type DBSecret struct {
 
 func init() {
 	secretName := os.Getenv("DB_SECRET_NAME")
-	region := os.Getenv("AWS_REGION")
+	region := os.Getenv("MY_AWS_REGION")
 
 	sess, err := session.NewSession(&aws.Config{
 		Region: aws.String(region),
